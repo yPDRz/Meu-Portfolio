@@ -15,20 +15,17 @@
 
 <body>
 
-  <!-- ============================================================
-       HEADER — Cabeçalho fixo no topo com logo, menu e botão de contato
-  ============================================================ -->
   <header>
-    <div class="Interface"> <!-- Div de largura máxima para centralizar o conteúdo -->
+    <div class="Interface"> 
 
-      <!-- Logo clicável que redireciona para a página inicial -->
+      
       <div class="Logo">
         <a href="index.html">
           <img src="imagens/Logo-Pedro-Luis.png" alt="Logo do Pedro Luis">
         </a>
       </div>
 
-      <!-- Menu de navegação para desktop (links âncora que levam às seções da página) -->
+      
       <nav class="Menu-PC">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -38,7 +35,7 @@
         </ul>
       </nav>
 
-      <!-- Botão de atalho para a seção de contato no rodapé -->
+      
       <div class="Contato">
         <a href="#contato">
           <button type="button">Contato</button>
@@ -48,24 +45,19 @@
     </div>
   </header>
 
-  <!-- ============================================================
-       MAIN — Conteúdo principal da página
-  ============================================================ -->
+
   <main>
 
-    <!-- ----------------------------------------------------------
-         SEÇÃO: APRESENTAÇÃO (Hero Section)
-         Primeira dobra da página com texto de introdução e foto
-    ---------------------------------------------------------- -->
+ 
     <section class="Apresentar">
       <div class="Interface">
-        <div class="flex"> <!-- Layout em duas colunas: texto à esquerda, imagem à direita -->
+        <div class="flex"> 
 
-          <!-- Bloco de texto principal da apresentação -->
+          
           <div class="topo-site">
             <h1><span>DESENVOLVENDO SOLUÇÕES E </span>APRENDENDO NA PRÁTICA</h1>
 
-            <!-- Breve descrição profissional -->
+            
             <p>
               Sou estudante de Análise e Desenvolvimento de Sistemas, com formação técnica em Redes de Computadores.
               Tenho conhecimento em suporte técnico, hardware e desenvolvimento front-end.
@@ -73,7 +65,7 @@
               e crescer profissionalmente.
             </p>
 
-            <!-- Botão que rola a página até a seção "Sobre" -->
+            
             <div class="Contato">
               <a href="#sobre">
                 <button type="button">Saiba mais sobre mim</button>
@@ -81,7 +73,7 @@
             </div>
           </div>
 
-          <!-- Foto de apresentação (lado direito no desktop) -->
+         
           <div class="img-site">
             <img src="imagens/FotoL.png" alt="Eu">
           </div>
@@ -90,33 +82,28 @@
       </div>
     </section>
 
-    <!-- ----------------------------------------------------------
-         SEÇÃO: HABILIDADES
-         Cards com as principais competências técnicas
-    ---------------------------------------------------------- -->
-    <section class="Habilidades" id="habilidades"> <!-- id="habilidades" permite o link do menu funcionar -->
+   
+    <section class="Habilidades" id="habilidades"> 
       <div class="Interface">
-        <h2 class="titulo">Habili<span>dades</span></h2> <!-- <span> usado para colorir parte do título via CSS -->
+        <h2 class="titulo">Habili<span>dades</span></h2> 
 
-        <div class="flex"> <!-- Grade de cards lado a lado -->
+        <div class="flex"> 
 
-          <!-- Card 1: Desenvolvimento Web -->
+          
           <div class="habilidade-box">
-            <i class="bi bi-braces"></i> <!-- Ícone de chaves (representa código) -->
+            <i class="bi bi-braces"></i>
             <h3>Dev WEB</h3>
             <p>Criação de páginas web utilizando HTML e CSS, com foco em estrutura e layout responsivo.</p>
           </div>
 
-          <!-- Card 2: Hardware e Suporte Técnico -->
           <div class="habilidade-box">
-            <i class="bi bi-motherboard"></i> <!-- Ícone de placa-mãe -->
+            <i class="bi bi-motherboard"></i>
             <h3>Hardware e Suporte Técnico</h3>
             <p>Montagem e manutenção de computadores, limpeza e manutenção de equipamentos, identificação de componentes de hardware e diagnóstico básico de falhas. Noções de instalação de programas, configuração de sistemas operacionais e resolução de problemas em computadores.</p>
           </div>
 
-          <!-- Card 3: Programação -->
           <div class="habilidade-box">
-            <i class="bi bi-laptop"></i> <!-- Ícone de notebook -->
+            <i class="bi bi-laptop"></i>
             <h3>Programação</h3>
             <p>Contato com linguagens C e C#, além de conceitos de Programação Orientada a Objetos (POO).</p>
           </div>
@@ -125,31 +112,23 @@
       </div>
     </section>
 
-    <!-- ----------------------------------------------------------
-         SEÇÃO: SOBRE MIM
-         Foto + texto detalhado sobre trajetória e objetivos
-    ---------------------------------------------------------- -->
-    <section class="sobre" id="sobre"> <!-- id="sobre" permite o link do menu funcionar -->
+    <section class="sobre" id="sobre">
       <div class="Interface">
-        <div class="flex"> <!-- Layout em duas colunas: foto à esquerda, texto à direita -->
+        <div class="flex">
 
-          <!-- Foto lateral da seção sobre -->
           <div class="img-sobre">
             <img src="imagens/FotoR.png" alt="Pedro Luis">
           </div>
 
-          <!-- Bloco de texto com informações pessoais e profissionais -->
           <div class="txt-sobre">
             <h2><span>Prazer,</span> eu sou o Pedro!</h2>
 
-            <!-- Parágrafo 1: Formação acadêmica -->
             <p>
               Meu nome é Pedro Luis e atualmente estou cursando o 4º período de Análise e Desenvolvimento de Sistemas.
               Possuo formação técnica em Redes de Computadores, onde adquiri conhecimentos em fundamentos de redes,
               suporte técnico, montagem e manutenção de computadores.
             </p>
 
-            <!-- Parágrafo 2: Experiências práticas (em destaque via <span>) -->
             <p>
               <span>
                 Além da formação acadêmica, já realizei alguns trabalhos práticos na área de hardware, como montagem,
@@ -160,7 +139,6 @@
               </span>
             </p>
 
-            <!-- Parágrafo 3: Objetivo profissional -->
             <p>
               Busco minha primeira oportunidade no mercado de trabalho na área de Tecnologia da Informação, com o
               objetivo de aplicar meus conhecimentos na prática, adquirir experiência profissional e evoluir
@@ -168,7 +146,6 @@
               e gosto de trabalhar em equipe.
             </p>
 
-            <!-- Botões de redes sociais: GitHub e WhatsApp -->
             <div class="btn-social">
               <a href="https://github.com/yPDRz" target="_blank" rel="noopener">
                 <button type="button"><i class="bi bi-github"></i></button>
@@ -184,26 +161,18 @@
       </div>
     </section>
 
-    <!-- ----------------------------------------------------------
-         SEÇÃO: PROJETOS
-         Cards com os projetos desenvolvidos, cada um com imagem, descrição e link
-    ---------------------------------------------------------- -->
-    <section class="projetos" id="projetos"> <!-- id="projetos" permite o link do menu funcionar -->
+    <section class="projetos" id="projetos">
 
       <div class="Interface">
 
-        <h2 class="titulo"><span>Proj</span>etos</h2> <!-- <span> colorindo parte do título via CSS -->
+        <h2 class="titulo"><span>Proj</span>etos</h2>
 
-        <div class="flex-projetos"> <!-- Grade de cards de projetos -->
+        <div class="flex-projetos">
 
-          <!-- --------------------------------------------------
-               Card Projeto 1: Site Nutricionista
-          -------------------------------------------------- -->
           <div class="projeto-card">
 
-            <!-- Imagem de capa do projeto (definida via CSS background-image) -->
             <div class="img-port" style="background-image: url(imagens/projeto1.png);">
-              <div class="overlay">Site Nutricionista</div> <!-- Texto exibido ao passar o mouse (hover) -->
+              <div class="overlay">Site Nutricionista</div>
             </div>
 
             <h3>Site Nutricionista</h3>
@@ -216,7 +185,6 @@
               trabalho em equipe e integração entre sistema e banco de dados.
             </p>
 
-            <!-- Botão que abre o repositório do projeto no GitHub -->
             <div class="Contato">
               <a href="https://github.com/ac1oli/Projeto-Faculdade" target="_blank" class="projeto-link">
                 <button type="button">Ver Projeto</button>
@@ -225,13 +193,9 @@
 
           </div>
 
-          <!-- --------------------------------------------------
-               Card Projeto 2: Sistema de Locadora em C
-          -------------------------------------------------- -->
           <div class="projeto-card">
             <a href="https://github.com/ac1oli/Projeto-Faculdade" class="projeto-link" target="_blank"></a>
 
-            <!-- Imagem de capa do projeto -->
             <div class="img-port" style="background-image: url(imagens/projeto2.png);">
               <div class="overlay">Sistema de Locadora de Veículos em Linguagem C</div>
             </div>
@@ -246,7 +210,6 @@
               equipe.
             </p>
 
-            <!-- Botão que abre a pasta do projeto no Google Drive -->
             <div class="Contato">
               <a href="https://drive.google.com/drive/folders/1Fid7WGf5yBjOoHjQY0OYSVbwRelsAMea?usp=sharing"
                 class="projeto-link" target="_blank">
@@ -256,14 +219,10 @@
 
           </div>
 
-          <!-- --------------------------------------------------
-               Card Projeto 3: Automação de Arquivos com Python
-          -------------------------------------------------- -->
           <div class="projeto-card">
             <a href="https://drive.google.com/drive/folders/1-VhvovxBps48LIJZZAWnYa9kAy-v2Hhl?usp=sharing"
               class="projeto-link"></a>
 
-            <!-- Imagem de capa do projeto -->
             <div class="img-port" style="background-image: url(imagens/projeto3.png);">
               <div class="overlay">Automação de Organização de Arquivos e Pastas</div>
             </div>
@@ -277,7 +236,6 @@
               aplica conceitos de lógica de programação, manipulação de arquivos e organização de dados.
             </p>
 
-            <!-- Botão que abre a pasta do projeto no Google Drive -->
             <div class="Contato">
               <a href="https://drive.google.com/drive/folders/1-VhvovxBps48LIJZZAWnYa9kAy-v2Hhl?usp=sharing"
                 class="projeto-link" target="_blank">
@@ -287,28 +245,22 @@
 
           </div>
 
-        </div><!-- /.flex-projetos -->
+        </div>
 
-      </div><!-- /.Interface -->
+      </div>
 
-    </section><!-- /#projetos -->
+    </section>
 
   </main>
 
-  <!-- ============================================================
-       FOOTER — Rodapé com logo, redes sociais, e-mail e assinatura
-       O id="contato" aqui é o destino do botão "Contato" do header
-  ============================================================ -->
   <footer id="contato">
     <div class="Interface">
       <div class="flex">
 
-        <!-- Logo no rodapé (versão alternativa/clara) -->
         <div class="logo-cima">
           <img src="imagens/Logo-Pedro-LuisR.png" alt="Logo">
         </div>
 
-        <!-- Botões de redes sociais: GitHub e WhatsApp -->
         <div class="btn-social">
           <a href="https://github.com/yPDRz" target="_blank">
             <button type="button">
@@ -325,15 +277,13 @@
 
       </div>
 
-      <!-- Linha com e-mail de contato (separada por borda via classe CSS) -->
       <div class="linha-cima borda">
         <p>
-          <i class="bi bi-envelope-at"></i> <!-- Ícone de e-mail -->
+          <i class="bi bi-envelope-at"></i>
           pedrosanti.1907@gmail.com
         </p>
       </div>
 
-      <!-- Assinatura e copyright -->
       <div class="assinatura">
         <p>© 2026 Pedro Luis — Desenvolvido por mim</p>
       </div>
