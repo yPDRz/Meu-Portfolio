@@ -1,27 +1,27 @@
 /* GERAL */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Orbitron', sans-serif; 
+    font-family: 'Orbitron', sans-serif;
 }
 
-body{
+body {
     background-color: black;
     height: 100vh;
 }
 
-.Interface{
+.Interface {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-.Contato button{
+.Contato button {
     background-color: #58a1d2;
     color: black;
     border: none;
@@ -32,19 +32,19 @@ body{
     border-radius: 15px;
     transition: .2s;
     transition: background-color 0.3s ease;
-} 
+}
 
-h2.titulo{
+h2.titulo {
     color: white;
     font-size: 50px;
     text-align: center;
 }
 
-h2.titulo span{
+h2.titulo span {
     color: #58a1d2;
 }
 
-button:hover{
+button:hover {
     box-shadow: 0 0 10px #58a1d2;
     transform: scale(1.15);
 }
@@ -52,36 +52,37 @@ button:hover{
 
 /* CABEÇALHO */
 
-header{
+header {
     padding: 20px 4%;
 }
 
-header > .Interface{
+header>.Interface {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.Logo img{
+.Logo img {
     width: 220px;
 }
 
-header a{
+header a {
     color: rgb(85, 85, 85);
     text-decoration: none;
     display: inline-block;
     transition: 0.3s;
 }
-header a:hover{
+
+header a:hover {
     color: #58a1d2;
     transform: scale(1.15);
 }
 
-header nav ul{
+header nav ul {
     list-style-type: none;
 }
 
-.Menu-PC ul{
+.Menu-PC ul {
     display: flex;
     text-align: center;
     font-size: 18px;
@@ -90,127 +91,154 @@ header nav ul{
 
 /* TOPO DO SITE */
 
-section.Apresentar{
-    padding: 50px 4%;  
+
+.subtitulo {
+    font-size: 0.95rem;
+    color: #7fbfff;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
 }
 
-section.Apresentar .flex{   
+.subtitulo span {
+    color: #7fbfff;
+    font-weight: bold;
+}
+
+section.Apresentar {
+    padding: 50px 4%;
+}
+
+section.Apresentar .flex {
     align-items: center;
     justify-content: center;
     gap: 90px;
 }
 
-.Apresentar h1{
+.Apresentar h1 {
     color: white;
     font-size: 40px;
     line-height: 40px;
 }
 
-.Apresentar h1 span{
+.Apresentar h1 span {
     color: #58a1d2;
 }
 
-.Apresentar p{
-    color:white;
+.Apresentar p {
+    color: white;
     margin: 30px 0px;
 }
 
-.Apresentar .img-site img{
+.Apresentar .img-site img {
     position: relative;
     animation: levantar 2s ease-in-out infinite alternate;
 }
 
-@keyframes levantar{
-    0%{
+@keyframes levantar {
+    0% {
         top: 0px;
     }
-    100%
-    {
+
+    100% {
         top: 30px;
     }
 }
 
 /* HABILIDADES */
-section.Habilidades{
+section.Habilidades {
     padding: 50px 4%;
 }
 
-section.Habilidades .flex{
-    gap: 50px;
+section.Habilidades .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
 }
 
-.Habilidades .habilidade-box{
-   color: white;
-   padding: 40px;
-   margin-top: 40px;
-   border-radius: 25px;
-   border: 2px solid #58a1d2;
-   transform: .2s;
+.Habilidades .habilidade-box {
+    flex: 1 1 180px;
+    max-width: 210px;
+    color: white;
+    padding: 25px 20px;
+    margin-top: 40px;
+    border-radius: 25px;
+    border: 2px solid #58a1d2;
+    transform: .2s;
+    display: flex;
+    flex-direction: column;
 }
 
-.Habilidades .habilidade-box:hover{
+.Habilidades .habilidade-box:hover {
     box-shadow: 0 0 12px #ffffff;
     transform: scale(1.05);
     transition: .2s;
 }
 
-.Habilidades .habilidade-box i{
+.Habilidades .habilidade-box i {
     color: #58a1d2;
     font-size: 60px;
-    
+
 }
 
-.Habilidades .habilidade-box h3{
-    font-size: 27px;
-    margin: 18px 0px;
+.Habilidades .habilidade-box h3 {
+    font-size: 18px;
+    margin: 14px 0px;
+    word-break: break-word;
+}
+
+.Habilidades .habilidade-box p {
+    font-size: 13px;
+    line-height: 1.5;
 }
 
 /* SOBRE MIM */
 
-section.sobre{
+section.sobre {
     padding: 50px 4%;
 }
 
-.sobre .txt-sobre{
+.sobre .txt-sobre {
     color: white;
 }
 
-section.sobre .flex{
+section.sobre .flex {
     align-items: center;
     justify-content: space-between;
     gap: 60px;
 }
 
-.sobre .txt-sobre h2{
+.sobre .txt-sobre h2 {
     font-size: 40px;
     line-height: 40px;
     margin-bottom: 25px;
-    
+
 }
 
-.sobre .txt-sobre h2 span{
+.sobre .txt-sobre h2 span {
     color: #58a1d2;
-    
+
 }
 
-.sobre .txt-sobre p{
+.sobre .txt-sobre p {
     margin: 20px 0px;
     text-align: justify;
 }
 
-.sobre .txt-sobre p span{
+.sobre .txt-sobre p span {
     color: #58a1d2;
-    
+
 }
 
-.sobre .img-sobre img{
-    width: 4000px; 
+.sobre .img-sobre img {
+    width: 4000px;
     max-width: 100%;
     height: auto;
     display: block;
 }
 
- .btn-social button{
+.btn-social button {
     width: 50px;
     height: 50px;
     border-radius: 30%;
@@ -223,23 +251,23 @@ section.sobre .flex{
 
 }
 
-html{
-  scroll-behavior: smooth;
+html {
+    scroll-behavior: smooth;
 }
 
 /* PORTIFOLIO */
 
-section.projetos{
+section.projetos {
     padding: 70px 4%;
     box-shadow: 0 0 40px 8px #58a1d22e;
 }
 
-section.projetos .flex{
+section.projetos .flex {
     justify-content: center;
     gap: 70px;
 }
 
-.img-port{
+.img-port {
     width: 360px;
     height: 460px;
     background-color: #58a1d2;
@@ -251,12 +279,12 @@ section.projetos .flex{
     position: relative;
 }
 
-.img-port:hover{
+.img-port:hover {
     background-position: 100% 100%;
-    
+
 }
 
-.overlay{
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -273,45 +301,45 @@ section.projetos .flex{
     transition: opacity 0.3s ease;
 }
 
-.img-port:hover .overlay{
+.img-port:hover .overlay {
     opacity: 1;
 }
 
 /* PROJETOS LADO A LADO */
 
-.flex-projetos{
+.flex-projetos {
     display: flex;
     justify-content: center;
     gap: 40px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     margin-top: 50px;
 }
 
-.projeto-card{
+.projeto-card {
     width: 360px;
     text-align: center;
     color: white;
 }
 
-.projeto-card h3{
+.projeto-card h3 {
     margin-top: 15px;
     color: #58a1d2;
 }
 
-.projeto-card p{
+.projeto-card p {
     margin-top: 10px;
     font-size: 15px;
     line-height: 1.5;
 }
 
-.projeto-link{
+.projeto-link {
     text-decoration: none;
     color: inherit;
 }
 
 /* RODAPE */
 
-footer{
+footer {
     padding: 55px 4%;
     box-shadow: 0 0 40px 8px #58a1d22e;
 }
@@ -322,24 +350,24 @@ footer .flex {
     align-items: center;
 }
 
-.borda{
+.borda {
     border-top: 2px solid #58a1d2;
 }
 
-.logo-cima img{
+.logo-cima img {
     width: 220px;
 }
 
-footer .linha-cima p i{
+footer .linha-cima p i {
     color: #58a1d2;
     font-size: 25px;
 }
 
-footer .linha-cima p a{
+footer .linha-cima p a {
     color: #58a1d2;
 }
 
-footer .linha-cima p{
+footer .linha-cima p {
     color: white;
     font-size: 16px;
 }
@@ -356,72 +384,73 @@ footer .linha-cima p{
 
 /* RESPONSIVO */
 
-@media screen and (max-width: 1020px){
+@media screen and (max-width: 1020px) {
 
-    
-    .flex{
+
+    .flex {
         flex-direction: column;
         text-align: center;
         gap: 30px;
     }
 
-    
-    section.Apresentar .flex{
+
+    section.Apresentar .flex {
         flex-direction: column-reverse;
         gap: 40px;
     }
 
-    
-    .Apresentar h1{
+
+    .Apresentar h1 {
         font-size: 28px;
         line-height: 32px;
     }
 
-    
-    .img-site img{
+
+    .img-site img {
         width: 100%;
         max-width: 300px;
         margin: 0 auto;
     }
 
-   
-    section.Habilidades .flex{
+
+    section.Habilidades .flex {
         flex-direction: column;
         gap: 20px;
     }
 
-    
-    section.sobre .flex{
+
+    section.sobre .flex {
         flex-direction: column;
         text-align: center;
     }
 
-    .sobre .img-sobre img{
+    .sobre .img-sobre img {
         width: 100%;
         max-width: 300px;
     }
 
-    
-    .flex-projetos{
+
+    .flex-projetos {
         flex-direction: column;
         align-items: center;
     }
 
-    .projeto-card{
+    .projeto-card {
         width: 100%;
         max-width: 350px;
     }
 
-    
-    footer .flex{
+
+    footer .flex {
         flex-direction: column;
         gap: 20px;
         text-align: center;
     }
 
-    
-    .Menu-PC, header .Contato{
-    display: none;
-}
+
+    .Menu-PC,
+    header .Contato {
+        display: none;
+    }
 
 }
